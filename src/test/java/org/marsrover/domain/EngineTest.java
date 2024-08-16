@@ -11,7 +11,9 @@ class EngineTest {
 
     @Test
     void testMove() {
-        Engine engine =new Engine();
+
+        PlateauSize newPlateauSize =new PlateauSize(5,5);
+        Engine engine =new Engine(newPlateauSize);
         Position newPosition = engine.move(new Position(2,4,CompassDirection.E));
         assertNotNull(newPosition);
         assertEquals(3,newPosition.getX());
@@ -33,7 +35,7 @@ class EngineTest {
         Position newPosition4=engine.move(new Position(3,2,CompassDirection.E));
         assertNotNull(newPosition4);
         assertEquals(4,newPosition4.getX());
-        assertEquals(2,newPosition4.getX());
+        assertEquals(2,newPosition4.getY());
         assertEquals(CompassDirection.E,newPosition4.getFacing());
 
         boolean thrown = false;
@@ -61,7 +63,10 @@ class EngineTest {
 
     @Test
     void testRotateLeft() {
-        Engine engine=new Engine();
+
+
+        PlateauSize newPlateauSize =new PlateauSize(5,5);
+        Engine engine =new Engine(newPlateauSize);
         Position newPosition =engine.rotateLeft(new Position(2,4,CompassDirection.N));
         assertNotNull(newPosition);
         assertEquals(2,newPosition.getX());
@@ -86,7 +91,10 @@ class EngineTest {
 
     @Test
     void testRotateRight() {
-        Engine engine = new Engine();
+
+        PlateauSize newPlateauSize =new PlateauSize(5,5);
+        Engine engine =new Engine(newPlateauSize);
+
         Position newPosition=engine.rotateRight(new Position(2,3,CompassDirection.N));
         assertNotNull(newPosition);
         assertEquals(2,newPosition.getX());
@@ -99,11 +107,11 @@ class EngineTest {
 
         Position newPosition3 =engine.rotateRight(new Position(2,3,CompassDirection.S));
         assertNotNull(newPosition3);
-        assertEquals(CompassDirection.W,newPosition2.getFacing());
+        assertEquals(CompassDirection.W,newPosition3.getFacing());
 
         Position newPosition4 =engine.rotateRight(new Position(2,3,CompassDirection.W));
         assertNotNull(newPosition4);
-        assertEquals(CompassDirection.N,newPosition2.getFacing());
+        assertEquals(CompassDirection.N,newPosition4.getFacing());
 
 
 
