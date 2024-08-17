@@ -8,7 +8,10 @@ public class Rover {
 
     Position currentPosition;
 
-
+    public Rover(Engine engine, Position currentPosition) {
+        this.engine = engine;
+        this.currentPosition = currentPosition;
+    }
 
     public Position activateEngine(List<Instruction> instructionList){
         for(Instruction instr: instructionList) {

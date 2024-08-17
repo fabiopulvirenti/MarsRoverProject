@@ -28,7 +28,7 @@ class InputParserTest {
         try{
             PlateauSize plateauSize3= InputParser.parseStringToPlateauSize("-3 -4");
         } catch (IllegalArgumentException e){
-            System.out.println(e.getMessage());
+
             thrown=true;
         }
         assertTrue(thrown);
@@ -49,7 +49,7 @@ class InputParserTest {
         try{
             Position position2 = InputParser.parseStringToPosition("-1 2 N");
         } catch(IllegalArgumentException e){
-            System.out.println(e.getMessage());
+
             thrown = true;
         }
         assertTrue(thrown);
@@ -58,7 +58,7 @@ class InputParserTest {
        try{
            Position position3 = InputParser.parseStringToPosition("1 -2 N");
        } catch (IllegalArgumentException e){
-           System.out.println(e.getMessage());
+
            thrown2 =true;
        }
        assertTrue(thrown2);
@@ -98,7 +98,6 @@ class InputParserTest {
         try {
             List<Instruction> instructionList3 = InputParser.parseStringToInstruction("A");
         }catch(IllegalArgumentException e){
-            System.out.println(e.getMessage());
             thrown =true;
         }
         assertTrue(thrown);

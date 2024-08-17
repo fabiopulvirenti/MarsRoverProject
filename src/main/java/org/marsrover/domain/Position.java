@@ -44,4 +44,22 @@ public class Position {
                 ", facing=" + facing +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Position position)) return false;
+
+        if (x != position.x) return false;
+        if (y != position.y) return false;
+        return facing == position.facing;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = x;
+        result = 31 * result + y;
+        result = 31 * result + facing.hashCode();
+        return result;
+    }
 }

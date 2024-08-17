@@ -40,7 +40,7 @@ class EngineTest {
 
         boolean thrown = false;
         try {
-            Position newPosition5 = engine.move(new Position(2,4,CompassDirection.N));
+            Position newPosition5 = engine.move(new Position(2,5,CompassDirection.N));
         }catch(IllegalArgumentException e){
             assertEquals("Position out of bound.",e.getMessage());
             thrown =true;
@@ -50,7 +50,7 @@ class EngineTest {
 
         boolean thrown2 = false;
         try {
-            Position newPosition6 = engine.move(new Position(4,4,CompassDirection.N));
+            Position newPosition6 = engine.move(new Position(5,5,CompassDirection.N));
         }catch(IllegalArgumentException e){
             assertEquals("Position out of bound.",e.getMessage());
             thrown2 =true;
