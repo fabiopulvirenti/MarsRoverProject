@@ -2,9 +2,9 @@ package org.marsrover.domain;
 
 public class PlateauSize {
 
- private int numRows;
+    private final int numRows;
 
- private int numCols;
+    private final int numCols;
 
     public PlateauSize(int numRows, int numCols) {
         this.numRows = numRows;
@@ -22,11 +22,7 @@ public class PlateauSize {
     public boolean isWithinBorders(Position position) {
         if (position.getX() > this.numRows || position.getY() > this.numCols) {
             return false;
-        } else if (position.getX() < 0 || position.getY() < 0) {
-            return false;
-        } else {
-            return true;
-        }
+        } else return position.getX() >= 0 && position.getY() >= 0;
     }
 
     @Override

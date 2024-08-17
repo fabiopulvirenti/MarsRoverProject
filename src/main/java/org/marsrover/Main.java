@@ -1,17 +1,12 @@
 package org.marsrover;
 
-import org.marsrover.domain.*;
-import org.marsrover.inputLayer.InputParser;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.marsrover.domain.MarsRoverGame;
 
 public class Main {
     public static void main(String[] args) {
 
-        MarsRoverGame game= new MarsRoverGame();
+        MarsRoverGame game = new MarsRoverGame();
         game.takeInputFromUser();
-
 
 
 //        List<String> input = new ArrayList<>();

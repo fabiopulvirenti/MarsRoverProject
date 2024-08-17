@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Plateau {
 
-    private PlateauSize plateauSize;
-    private List<Rover> roverList =new ArrayList<>();
+    private final PlateauSize plateauSize;
+    private final List<Rover> roverList = new ArrayList<>();
 
     public Plateau(PlateauSize plateauSize) {
         this.plateauSize = plateauSize;

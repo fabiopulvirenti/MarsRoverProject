@@ -12,21 +12,21 @@ public class Engine {
 
 
         Position newPosition;
-        if(position.getFacing().equals(CompassDirection.E)){
-            newPosition= new Position(position.getX() +1, position.getY(), CompassDirection.E);
-        } else if(position.getFacing().equals(CompassDirection.S)){
-            newPosition = new Position(position.getX(), position.getY() -1, CompassDirection.S);
-        } else if(position.getFacing().equals(CompassDirection.W)){
-            newPosition = new Position(position.getX()-1, position.getY(), CompassDirection.W);
-        }else{
-            newPosition= new Position(position.getX(), position.getY() +1 , CompassDirection.N);
+        if (position.getFacing().equals(CompassDirection.E)) {
+            newPosition = new Position(position.getX() + 1, position.getY(), CompassDirection.E);
+        } else if (position.getFacing().equals(CompassDirection.S)) {
+            newPosition = new Position(position.getX(), position.getY() - 1, CompassDirection.S);
+        } else if (position.getFacing().equals(CompassDirection.W)) {
+            newPosition = new Position(position.getX() - 1, position.getY(), CompassDirection.W);
+        } else {
+            newPosition = new Position(position.getX(), position.getY() + 1, CompassDirection.N);
         }
 
-        if(plateauSize.isWithinBorders(newPosition)){
+        if (plateauSize.isWithinBorders(newPosition)) {
             return newPosition;
-            } else {
-                throw new IllegalArgumentException("Position out of bound.");
-            }
+        } else {
+            throw new IllegalArgumentException("Position out of bound.");
+        }
     }
 
 

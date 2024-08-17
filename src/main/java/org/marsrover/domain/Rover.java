@@ -13,23 +13,22 @@ public class Rover {
         this.currentPosition = currentPosition;
     }
 
-    public Position activateEngine(List<Instruction> instructionList){
-        for(Instruction instr: instructionList) {
-            if(instr.equals(Instruction.L)){
+    public Position activateEngine(List<Instruction> instructionList) {
+        for (Instruction instr : instructionList) {
+            if (instr.equals(Instruction.L)) {
                 Position newPosition = this.engine.rotateLeft(currentPosition);
-                currentPosition =newPosition;
-            } else if(instr.equals(Instruction.R)){
+                currentPosition = newPosition;
+            } else if (instr.equals(Instruction.R)) {
                 Position newPosition = this.engine.rotateRight(currentPosition);
-                currentPosition =newPosition;
-            } else if(instr.equals(Instruction.M)){
+                currentPosition = newPosition;
+            } else if (instr.equals(Instruction.M)) {
                 Position newPosition = this.engine.move(currentPosition);
-                currentPosition =newPosition;
+                currentPosition = newPosition;
             }
         }
         return currentPosition;
 
     }
-
 
 
 }
