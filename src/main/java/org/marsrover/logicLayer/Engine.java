@@ -1,4 +1,8 @@
-package org.marsrover.domain;
+package org.marsrover.logicLayer;
+
+import org.marsrover.domain.CompassDirection;
+import org.marsrover.domain.PlateauSize;
+import org.marsrover.domain.Position;
 
 public class Engine {
 

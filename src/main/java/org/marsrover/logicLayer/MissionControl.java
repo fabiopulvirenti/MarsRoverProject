@@ -1,4 +1,6 @@
-package org.marsrover.domain;
+package org.marsrover.logicLayer;
+
+import org.marsrover.domain.*;
 
 import java.util.List;
 

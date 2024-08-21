@@ -1,6 +1,6 @@
 package org.marsrover;
 
-import org.marsrover.domain.MarsRoverGame;
+import org.marsrover.logicLayer.MarsRoverGame;
 
 public class Main {
     public static void main(String[] args) {

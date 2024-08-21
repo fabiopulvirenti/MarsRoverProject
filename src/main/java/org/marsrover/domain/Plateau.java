@@ -1,5 +1,7 @@
 package org.marsrover.domain;
 
+import org.marsrover.logicLayer.Rover;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,5 +1,8 @@
-package org.marsrover.domain;
+package org.marsrover.logicLayer;
 
+import org.marsrover.domain.Instruction;
+import org.marsrover.domain.PlateauSize;
+import org.marsrover.domain.Position;
 import org.marsrover.inputLayer.InputParser;
 
 import java.util.List;

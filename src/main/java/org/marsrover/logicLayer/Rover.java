@@ -1,4 +1,7 @@
-package org.marsrover.domain;
+package org.marsrover.logicLayer;
+
+import org.marsrover.domain.Instruction;
+import org.marsrover.domain.Position;
 
 import java.util.List;
 

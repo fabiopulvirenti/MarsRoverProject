@@ -1,6 +1,7 @@
 package org.marsrover.domain;
 
 import org.junit.jupiter.api.Test;
+import org.marsrover.logicLayer.MissionControl;
 import org.marsrover.inputLayer.InputParser;
 
 import java.util.ArrayList;

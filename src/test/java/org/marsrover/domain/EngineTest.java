@@ -1,9 +1,7 @@
 package org.marsrover.domain;
 
 import org.junit.jupiter.api.Test;
-import org.marsrover.inputLayer.InputParser;
-
-import java.util.List;
+import org.marsrover.logicLayer.Engine;
 
 import static org.junit.jupiter.api.Assertions.*;
 
